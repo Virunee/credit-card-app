@@ -32,14 +32,15 @@ function SimpleMediaCard(props) {
     apr,
     btod,
     purchaseoffer,
-    credit
+    credit,
+    img
   } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={img}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -50,19 +51,19 @@ function SimpleMediaCard(props) {
           <TableBody>
             <TableRow>
               <TableCell>APR</TableCell>
-              <TableCell numeric>{apr}</TableCell>
+              <TableCell numeric>{apr}%</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Balance Transfer Offer Duration</TableCell>
-              <TableCell numeric>{btod}</TableCell>
+              <TableCell numeric>{btod} months</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Purchase Offer Duration</TableCell>
-              <TableCell numeric>{purchaseoffer}</TableCell>
+              <TableCell numeric>{purchaseoffer} months</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Credit Available</TableCell>
-              <TableCell numeric>{credit}</TableCell>
+              <TableCell numeric>£{credit}</TableCell>
             </TableRow>
           </TableBody>
         </Table>
