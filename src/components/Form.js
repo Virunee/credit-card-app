@@ -24,6 +24,30 @@ let InputForm = props => {
     <Field name="lastName" component="input" type="text" />
   </div>
     <DatePicker/>
+    <div>
+    <label htmlFor="income">Annual income</label>
+    <Field name="income" component="input" type="text" placeholder="£" />
+  </div>
+  <div>
+    <label htmlFor="employment-status">Employment Status</label>
+    <Field name="employment-status" component="select">
+        <option />
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Contract">Contract</option>
+        <option value="Self-employed">Self-employed</option>
+        <option value="Student">Student</option>
+        <option value="Unemployed">Unemployed</option>
+    </Field>
+  </div>
+  <div>
+    <label htmlFor="house-number">House number</label>
+    <Field name="house-number" component="input" type="text" />
+  </div>
+  <div>
+    <label htmlFor="postcode">Postcode</label>
+    <Field name="postcode" component="input" type="text" />
+  </div>
   <button type="submit">Submit</button>
 </form>
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import InputPage from './containers/InputPage'
+import CardsPanel from './containers/CardsPanel'
 
 class App extends Component {
   render() {
@@ -13,6 +14,9 @@ class App extends Component {
           Enter your details below to find out which cards you can apply for.
         </p>
         <InputPage/>
+        <div className="card-panel">
+        <CardsPanel/>
+        </div>
       </div>
     );
   }
