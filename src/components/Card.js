@@ -11,17 +11,15 @@ import Typography from '@material-ui/core/Typography';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 
 const styles = {
   card: {
     maxWidth: 345,
   },
   media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+    maxWidth: 300,
+    paddingTop: '5%', // 16:9
   },
 };
 
@@ -38,9 +36,9 @@ function SimpleMediaCard(props) {
   return (
     <div>
       <Card className={classes.card}>
-        <CardMedia
+        <img
           className={classes.media}
-          image={img}
+          src={img}
           title="Contemplative Reptile"
         />
         <CardContent>

@@ -4,7 +4,7 @@ import { cards } from '../cardConfig'
 
 const cardComponents = cards.map(
     ({name, apr, btod, purchaseoffer,credit, img}, key) => 
-<Card name={name} apr={apr} btod={btod} purchaseoffer={purchaseoffer} img={img} credit={credit} key={key} />
+<Card name={name} apr={apr} btod={btod} purchaseoffer={purchaseoffer} credit={credit} img={img} key={key} />
 );
 
 class CardsPanel extends Component {
